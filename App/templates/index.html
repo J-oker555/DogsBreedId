@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prédiction d'Image</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uploader une image 🖼️</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html> 
